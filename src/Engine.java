@@ -1,20 +1,12 @@
-public class PremiumMember extends Member {
-    private double membershipFee;
+public class Engine {
+    private int powerEngine;
 
-    public PremiumMember(int memberId, String name, double membershipFee) {
-        super(memberId, name);
-        this.membershipFee = membershipFee;
+    // Setters and Getters
+    public int getPowerEngine() {
+        return powerEngine;
     }
 
-    @Override
-    public double calculateDiscount(double amount) {
-        // Premium members get 10% discount [cite: 66]
-        return amount * 0.10;
-    }
-
-    @Override
-    public void displayMemberInfo() {
-        super.displayMemberInfo();
-        System.out.println("Type: Premium | Membership Fee: $" + membershipFee);
+    public void setPowerEngine(int powerEngine) {
+        this.powerEngine = powerEngine;
     }
 }
