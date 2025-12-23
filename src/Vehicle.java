@@ -31,5 +31,10 @@ public class Vehicle implements PriceAdmin, VehicleAdmin {
     @Override
     public void describeCar() {
     }
-    // tostring mth
+    @Override
+    public String toString() {
+        // Returns the class name (e.g., "Vehicle")
+        return this.getClass().getSimpleName();
+    }
+
 }

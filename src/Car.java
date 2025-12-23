@@ -2,7 +2,7 @@ public class Car extends Vehicle {
     // Static counter for number of cars
     public static int numberOfCars = 0;
 
-    // 1. تعريف المصفوفة المطلوبة (Static Array)
+    // 1 (Static Array)
     private static String[] manufacturerName = {"Toyota", "BMW", "Ford", "Honda", "Mercedes"};
 
     public Car() {
@@ -15,7 +15,7 @@ public class Car extends Vehicle {
         return "This is a Car object.";
     }
 
-    // 2. دالة البحث المطلوبة (Static Method)
+    //  (Static Method)
     public static int searchModel(String m) {
         // Search inside the array
         for (int i = 0; i < manufacturerName.length; i++) {
