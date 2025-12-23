@@ -3,7 +3,7 @@ public class Car extends Vehicle {
     public static int numberOfCars = 0;
 
     // 1 (Static Array)
-    private static String[] manufacturerName = {"Toyota", "BMW", "Ford", "Honda", "Mercedes"};
+    private static final String[] manufacturerName = {"Toyota", "BMW", "Ford", "Honda", "Mercedes"};
 
     public Car() {
         super();
