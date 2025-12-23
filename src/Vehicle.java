@@ -31,4 +31,5 @@ public class Vehicle implements PriceAdmin, VehicleAdmin {
     @Override
     public void describeCar() {
     }
+    // tostring mth
 }

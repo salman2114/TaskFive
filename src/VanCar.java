@@ -5,7 +5,7 @@ public class VanCar extends Car {
     public double calculatePrice() {
         int power = e.getPowerEngine();
         double tax;
-        double baseAmount;
+        double baseAmount = 35000;
 
         if (power <= 1500) {
             tax = 0.14;
@@ -31,5 +31,6 @@ public class VanCar extends Car {
     public boolean equals(VanCar r) {
         if (r == null) return false;
         return this.calculatePrice() == r.calculatePrice();
+        //instance of
     }
 }
